@@ -1,0 +1,156 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.width{
+  max-width: 50%;
+}
+.img{
+  display: flex;
+  justify-content: center;
+}
+.cols{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.cards{
+  width: 30%;
+  border: 1px solid rgb(231, 231, 231);
+  border-radius: 5px;
+
+}
+.card-bodys{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.main-section{
+  margin-top: 100px;
+}
+
+.nav-bar{
+  background-color:#003452;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 15px;
+  position: relative;
+}
+
+.items{
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  align-items: center;
+  margin: 0;
+}
+.nav-links{
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+.nav-links:hover{
+  color: #fff;
+  text-decoration: none;
+}
+.nav-toggle{
+  display: none;
+}
+.navs{
+  text-decoration: none;
+  color: #fff;
+}
+.result-name ul{
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.result-name ul li{
+  margin: 0 10px;
+
+}
+a:hover{
+  text-decoration: none !important;
+}
+.flexs{
+  display: flex;
+ justify-content: space-between;
+}
+.flow{
+  display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.paddings{
+  padding: 10px;
+}
+.title{
+  font-size: 2rem !important;
+}
+@media screen and (max-width: 1010px) { 
+  .cols{
+      flex-direction: column;
+  }
+  .cards{
+      width: 100%;
+
+  }
+  .main-section{
+      margin-top: 10px;
+  }
+  .title{
+      font-size: 1.5rem !important;
+  }
+}
+
+@media screen and (max-width:451px){
+  .nav-toggle{
+      display: block;
+     
+  }
+  .nav-items{
+      position: absolute;
+      background-color: #003452;
+      left: -100%;
+      top: 100%;
+      width: 100%;
+      padding: 10px 0;
+      transition: 0.2s ease-in;
+      text-align: center;
+      height: 100vh;
+      z-index: 1;
+      
+  }
+  .nav-items.active{
+    left: 0%;
+    z-index: 1;
+  }
+  .nav-items ul{
+      margin: auto;
+  margin-top: 115px;
+  gap: 78px;
+  flex-direction: column;
+
+  }
+  .nav-bar img{
+      width: 30px;
+      height: 30px;
+  }
+  .nav-links {
+      margin: 40px 0;
+  }
+}
+@media screen and (max-width:425px) {
+  .cont{
+      font-size: 15px;
+      padding: 0;
+  }  
+  .card-headers{
+      width: 100% !important;
+  }  
+}
